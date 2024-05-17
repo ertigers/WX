@@ -1,0 +1,3 @@
+<view class="container">
+  <van-image width="100%" height="90vh" fit="contain" src="/public/image/mine/wx-contact.jpeg" />
+</view>

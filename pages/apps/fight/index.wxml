@@ -1,0 +1,27 @@
+<view class="container">
+  <!-- <van-dropdown-menu>
+    <van-dropdown-item value="{{ value }}" options="{{ option }}" />
+  </van-dropdown-menu> -->
+
+  <van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab title="今日对局"></van-tab>
+    <van-tab title="历史对局"></van-tab>
+  </van-tabs>
+  <view wx:if="{{ active === 0}}">
+    <view wx:if="{{ currentFightList.length }}">
+      <view wx:for="{{ currentFightList }}" wx:key="index" >
+        {{ item }}
+      </view>
+    </view>
+    <view wx:else>
+      <van-empty
+        class="custom-image"
+        image="https://img.yzcdn.cn/vant/custom-empty-image.png"
+        description="暂无对局"
+      />
+    </view>
+    <view style="width: 80%;margin: 0 auto;">
+      <van-button round type="primary" size="normal" block>新建对局</van-button>
+    </view>
+  </view>
+</view>

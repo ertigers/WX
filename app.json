@@ -1,0 +1,58 @@
+{
+  "pages":[
+    "pages/home/index",
+    "pages/apps/ranking/index",
+    "pages/apps/fight/index",
+    "pages/apps/circle/index",
+    "pages/mine/index/index",
+    "pages/mine/money/index",
+    "pages/mine/contact/index",
+    "pages/mine/version/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "娜娜和虎子",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#515151",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "public/image/tabbar/home.png",
+        "selectedIconPath": "public/image/tabbar/home_selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/mine/index/index",
+        "iconPath": "public/image/tabbar/mine.png",
+        "selectedIconPath": "public/image/tabbar/mine_selected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "plugins": {
+    "sdkPlugin": {
+      "version": "3.23.4",
+      "provider": "wxc6b86e382a1e3294"
+     }
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-icon": "@vant/weapp/icon/index"
+  }
+}

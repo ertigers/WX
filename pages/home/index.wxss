@@ -1,0 +1,13 @@
+.container {
+  padding: 20px;
+}
+.home-rows {
+
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;   
+}

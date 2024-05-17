@@ -1,0 +1,33 @@
+<view class="mine-container">
+  <view class="user-info-wrap">
+  <!-- 未授权登录的情况 -->
+    <view wx:if="{{ !userInfo }}" class="user-box">
+      <van-image round width="80" height="80" fit="cover" src="{{ userInfo.avatar || defaultAvatarUrl }}" />
+      <button open-type="getUserInfo" bindgetuserinfo="userInfoHandler">用户授权</button>
+    </view>
+    <!-- 已登录且已经授权用户信息的情况 -->
+    <view wx:if="{{ userInfo && userInfo.nickname}}" class="user-box">
+      <van-image round width="80" height="80" src="{{ userInfo.avatar }}" />
+      <view class="">{{ userInfo.nickname || '微信用户'}} </view>
+    </view>
+  </view>
+
+  <!-- app相关 -->
+  <view class="line-wrap app-auth">
+    <!-- <view class="line-item" bindtap="handleGoPage" data-id="{{ '/pages/mine/money/index' }}">
+      <van-image width="18" height="18" style="width:18px;height: 18px;" src="/public/image/mine/缴费管理.png" />
+      <view style="margin-right: auto;margin-left: 10px;">打赏支持</view>
+      <van-icon name="arrow" />
+    </view> -->
+    <view class="line-item" bindtap="handleGoPage" data-id="{{ '/pages/mine/contact/index' }}">
+      <van-image width="18" height="18" style="width:18px;height: 18px;" src="/public/image/mine/电话.png" />
+      <view style="margin-right: auto;margin-left: 10px;">联系作者</view>
+      <van-icon name="arrow" />
+    </view>
+    <view class="line-item" bindtap="handleGoPage" data-id="{{ '/pages/mine/version/index' }}">
+      <van-image width="18" height="18" style="width:18px;height: 18px;" src="/public/image/mine/历史报告.png" />
+      <view style="margin-right: auto;margin-left: 10px;">历史版本</view>
+      <van-icon name="arrow" />
+    </view>
+  </view>
+</view>

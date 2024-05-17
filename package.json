@@ -1,0 +1,14 @@
+{
+  "name": "nana and huhu",
+  "version": "1.0.0",
+  "description": "wx-vant",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ertigers",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.6.1"
+  }
+}

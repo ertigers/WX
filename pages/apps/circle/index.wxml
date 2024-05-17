@@ -1,0 +1,22 @@
+<view class="container">
+  <van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab title="我的圈子"></van-tab>
+    <van-tab title="全部圈子"></van-tab>
+  </van-tabs>
+  <view wx:if="{{ active === 0}}">
+    <view class="circle" wx:for="{{ circleList }}" wx:key="index" >
+      <view>
+        <view class="circle-name">{{ item.name }}</view>
+        <view class="circle-des">{{ item.description }}</view>
+        <view class="circle-user">人数：{{ 100 }}</view>      
+      </view>
+      <view class="circle-btn">
+        申请加入
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{ active === 1}}">
+    暂不支持
+  </view>
+</view>

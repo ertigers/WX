@@ -2,10 +2,10 @@
   "pages":[
     "pages/home/index",
     "pages/apps/ranking/index",
-    "pages/apps/fight/index",
+    "pages/apps/event/index",
+    "pages/apps/event-history/index",
     "pages/apps/circle/index",
     "pages/mine/index/index",
-    "pages/mine/money/index",
     "pages/mine/contact/index",
     "pages/mine/version/index"
   ],

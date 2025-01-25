@@ -1,36 +1,31 @@
 /* pages/apps/event/index.wxss */
 .container {
-  height: 100vh;
-  overflow-y: auto;
-	background-color: rgb(233, 233, 233);
+  padding: 16px;
 }
 
-
-.circle {
-	background-color: #fff;
-	margin: 10px;
-	padding: 10px;
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
+.van-list {
+  margin-bottom: 16px;
 }
 
-.circle-btn {
-  width: 100px;
-  text-align: center;
-	margin-left: auto;
-	margin-right: 10px;
-	color: rgb(40, 110, 110);
-}
-.circle-name {
-	font-size: 18px;
-}
-.circle-des {
-	font-size: 12px;
-	color: rgb(177, 177, 177);
-	margin: 10px 0;
+.van-field {
+  margin-bottom: 12px;
 }
 
-.circle-user {
-	font-size: 12px;
+.create-button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+}
+
+.van-popup {
+  padding: 16px;
+  border-radius: 12px; /* 圆角 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 阴影 */
+  background: linear-gradient(180deg, #ffffff, #f7f7f7); /* 渐变背景 */
+}
+
+.van-button {
+  margin-top: 10px; /* 按钮间距 */
 }

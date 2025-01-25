@@ -3,7 +3,6 @@
     "pages/home/index",
     "pages/apps/ranking/index",
     "pages/apps/event/index",
-    "pages/apps/event-history/index",
     "pages/apps/circle/index",
     "pages/mine/index/index",
     "pages/mine/contact/index",
@@ -53,6 +52,9 @@
     "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
     "van-dropdown-item": "@vant/weapp/dropdown-item/index",
     "van-empty": "@vant/weapp/empty/index",
-    "van-icon": "@vant/weapp/icon/index"
+    "van-icon": "@vant/weapp/icon/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-popup": "@vant/weapp/popup/index"
   }
 }

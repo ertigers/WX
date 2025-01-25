@@ -1,5 +1,5 @@
 {
-  "name": "nana and huhu",
+  "name": "huhu_nana",
   "version": "1.0.0",
   "description": "wx-vant",
   "main": "app.js",
@@ -9,6 +9,6 @@
   "author": "ertigers",
   "license": "ISC",
   "dependencies": {
-    "@vant/weapp": "^1.6.1"
+    "@vant/weapp": "^1.11.7"
   }
 }

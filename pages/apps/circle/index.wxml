@@ -3,7 +3,20 @@
     <van-tab title="我的圈子"></van-tab>
     <van-tab title="全部圈子"></van-tab>
   </van-tabs>
+
+  <!-- 我的圈子 -->
   <view wx:if="{{ active === 0}}">
+    <view class="circle" wx:for="{{ circleList }}" wx:key="index" >
+      <view>
+        <view class="circle-name">{{ item.name }}</view>
+        <view class="circle-des">{{ item.description }}</view>
+        <view class="circle-user">人数：{{ 100 }}</view>      
+      </view>
+    </view>
+  </view>
+
+  <!-- 圈子列表 -->
+  <view wx:if="{{ active === 1}}">
     <view class="circle" wx:for="{{ circleList }}" wx:key="index" >
       <view>
         <view class="circle-name">{{ item.name }}</view>
@@ -16,7 +29,8 @@
     </view>
   </view>
 
-  <view wx:if="{{ active === 1}}">
-    暂不支持
+  <!-- 创建圈子,只有管理员才可以创建 -->
+  <view class="center">
+    <van-button type="primary">创建圈子</van-button>
   </view>
 </view>

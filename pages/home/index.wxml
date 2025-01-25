@@ -11,13 +11,7 @@
     <van-col span="6">
       <navigator class="icon-box" hover-class="none" url="/pages/apps/event/index" open-type="navigate">
         <van-image width="40" height="40" src="/public/image/我的赛事.png" />
-        <view>我的赛事</view>
-      </navigator>
-    </van-col>
-    <van-col span="6">
-      <navigator class="icon-box" hover-class="none" url="/pages/apps/event-history/index" open-type="navigate">
-        <van-image width="40" height="40" src="/public/image/历史赛事.png" />
-        <view>历史赛事</view>
+        <view>活动</view>
       </navigator>
     </van-col>
     <van-col span="6">

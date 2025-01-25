@@ -1,9 +1,0 @@
-<view class="container">
-  <view class="circle" wx:for="{{ eventList }}" wx:key="index" >
-    <view>
-      <view class="circle-name">{{ item.name }}( {{ item.group_id.name }} )</view>
-      <view class="circle-des">{{ item.description }}</view>
-      <view class="circle-user">人员：{{ item.user_names }}</view>      
-    </view>
-  </view>
-</view>

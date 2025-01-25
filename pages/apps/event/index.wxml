@@ -1,10 +1,21 @@
 <!--pages/apps/event/index.wxml-->
 <view class="container">
-  <view class="circle" wx:for="{{ eventList }}" wx:key="index" >
-    <view>
-      <view class="circle-name">{{ item.name }}( {{ item.group_id.name }} )</view>
-      <view class="circle-des">{{ item.description }}</view>
-      <view class="circle-user">人员：{{ item.user_names }}</view>      
-    </view>
-  </view>
+    <van-cell wx:for="{{ eventList }}" wx:key="index" 
+        title="{{ item.name }}( {{ item.group_id.name }} )" 
+        label="{{ item.description }}" 
+        value="人员：{{ item.user_names }}" />
+
+  <!-- 创建活动按钮 -->
+  <van-button class="create-button" type="primary" size="large" bindtap="showCreateEventPopup">创建活动</van-button>
+
+  <!-- 弹出表单 -->
+  <van-popup show="{{ showPopup }}" position="bottom">
+    <van-form bindsubmit="submitForm">
+      <van-field name="title" bindinput="handleInputChange" label="活动标题" placeholder="请输入活动标题" />
+      <van-field name="description" bindinput="handleInputChange" label="活动描述" placeholder="请输入活动描述" type="textarea" />
+      <van-field name="date" bindinput="handleInputChange" label="日期" type="date" />
+      <van-button round type="primary" native-type="submit">提交</van-button>
+      <van-button class="cancel-button" type="default" bindtap="closePopup">取消</van-button>
+    </van-form>
+  </van-popup>
 </view>
